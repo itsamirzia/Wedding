@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><%= @title %></title>
+<meta charset="utf-8">
+<%= stylesheet_link_tag "reset" %>
+  <%= stylesheet_link_tag "layout" %>
+  <%= stylesheet_link_tag "style" %>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="../gmaps.js"></script>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "gmap" %>
+
+</head>
+<body id="page2">
+<!-- START PAGE SOURCE -->
+<div class="extra">
+  <div class="main">
+
+    <section id="content">
+      <div class="wrapper">
+        <article class="col1">
+          <h2><span></span>Get Your <span>Wedding Card</span> </h2><br><br>
+          <%= image_tag("/images/Wedding 1.jpg") %><%= image_tag("/images/Wedding 2.jpg") %><%= image_tag("/images/Wedding 3.jpg") %>
+             </article>
+        </div>
+        </section>
+      </div>
+    </div>
+            <footer>
+  <div class="footerlink">
+    <p class="lf">Copyright &copy; 2010 <a href="route">AnSWedding.com</a> - All Rights Reserved</p>
+
+    <div style="clear:both;"></div>
+  </div>
+</footer>
+<script type="text/javascript"> Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
+
+</body>
+</html>

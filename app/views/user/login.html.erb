@@ -1,0 +1,46 @@
+<h5></h5>
+<div id="left_column">
+<% form_for :user do |form| %>
+<fieldset>
+<legend>Enter Your Login Details</legend>
+  <%= error_messages_for "user" %>
+<div class="form_row">
+<label for="invitee_name">Invitee name:</label>
+<%= form.text_field :invitee_name %>
+</div>
+<div class="form_row">
+<label for="password">Password:</label>
+<%= form.password_field :password,
+:size => User::PASSWORD_SIZE,
+:maxlength => User::PASSWORD_MAX_LENGTH %>
+</div>
+<div class="form_row">
+<%= submit_tag "Login!", :class => "submit" %>
+</div>
+
+</fieldset>
+<% end %>
+    </div>
+   <div id="right_column">
+  <div id="main_content">
+    <fieldset>
+          <legend>Welcome to AnSwedding.com</legend>
+        <table>
+		<table>
+        <td>
+          <h2>Azam Ghani <span>weds</span> Shibani Akhtar</h2>
+          <h3>Thursday, October 18, 2012</h3>
+           </td>
+			</table>	
+          <td>
+		  <table>
+           <h2>Amir Ziya <span>weds</span> Saltnat Abrar</h2>
+            <h3>Saturday, October 20, 2012</h3>
+			</table>
+          </td>
+      </table>
+    <h2>Reception <span>On</span> </h2>
+            <h3>Sunday, October 21, 2012</h3>
+               </fieldset>
+    </div>
+ </div>
